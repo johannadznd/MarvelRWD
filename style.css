@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "KoHo", sans-serif;
+}
+
+.top {
+  background: #e51c24;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60vw;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  margin: 2vw;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+}
+
+.movie {
+  margin: auto;
+  margin-bottom: 3vw;
+  padding: 3vw;
+}
+
+.movie img {
+  width: 50vw;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.img-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.characters img {
+  margin: auto;
+  width: 50vw;
+}
+
+button {
+  background: #6a919a;
+  border: none;
+  padding: 2vw;
+  border-radius: 10px;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2vw;
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: solid 1px black;
+  background: #e51c24;
+}
+
+#main {
+  margin: 4vw;
+}
+
+@media screen and (min-width: 600px) {
+  .top {
+    height: 30vw !important;
+    align-items: center;
+    justify-content: left;
+    background-image: url("saga-avengers750.jpg");
+    width: 100%;
+  }
+  .top h1 {
+    margin-left: 5vw;
+  }
+
+  #movies {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .movie img {
+    width: 35vw;
+  }
+
+  .characters {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vw;
+  }
+
+  .descr {
+    width: 30vw;
+  }
+
+  .characters img {
+    width: 35vw;
+  }
+
+  #inv {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .movie img {
+    width: 19vw;
+  }
+
+  .characters img {
+    width: 19vw;
+  }
+  .top {
+    background-image: url("saga-avengers1200.jpg");
+    width: 100%;
+  }
+
+  button {
+    padding: 1vw;
+  }
+}
